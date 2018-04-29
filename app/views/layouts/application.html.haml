@@ -10,8 +10,10 @@
 		%nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
 			#navbarsExampleDefault.collapse.navbar-collapse
 				%ul.navbar-nav.mr-auto
-					%li.nav-item.active
+					%li.nav-item
 						= link_to "Home", root_path, class: "nav-link"
+					%li.nav-item
+						= link_to "Stats", stats_path, class: "nav-link"
 							
 
 		%main{:role => "main"}
