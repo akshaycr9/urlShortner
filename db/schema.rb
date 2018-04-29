@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180428112226) do
+ActiveRecord::Schema.define(version: 20180429061836) do
+
+  create_table "url_statistics", force: :cascade do |t|
+    t.integer  "same_url_converted",     default: 0
+    t.integer  "url_opened",             default: 0
+    t.datetime "last_opened_at"
+    t.string   "last_browser_opened_on"
+    t.integer  "url_id"
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+  end
 
   create_table "urls", force: :cascade do |t|
     t.string   "original_url"

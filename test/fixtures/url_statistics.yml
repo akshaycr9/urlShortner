@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  same_url_converted: 1
+  url_opened: 1
+  last_opened_at: 2018-04-29 11:48:36
+  last_browser_opened_on: MyString
+  url_id: 1
+
+two:
+  same_url_converted: 1
+  url_opened: 1
+  last_opened_at: 2018-04-29 11:48:36
+  last_browser_opened_on: MyString
+  url_id: 1

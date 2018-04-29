@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
     root 'urls#index'
-    get "/:converted_url", to: "urls#show"
+    get '/stats', to: 'urls#stats'
+    get '/:converted_url', to: 'urls#show'
     resources :urls, only: :create
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

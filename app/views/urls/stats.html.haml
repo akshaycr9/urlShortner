@@ -1,0 +1,31 @@
+.container
+	.row
+		.col-md-10.col-md-offset-1
+			.panel.panel-default.panel-table
+				.panel-heading
+					.row
+						.col.col-xs-6
+							%h3.panel-title URL Statistics
+				.panel-body
+					%table.table.table-striped.table-bordered.table-list
+						%thead
+							%tr
+								%th URL
+								%th Converted URL
+								%th Created At
+								%th Same URL Converted
+								%th Times URL Opened
+								%th Last Opened At
+								%th Last Opened Browser
+
+						%tbody
+							- @url_stats.each do |stat|
+								%tr
+									%td= stat.original_url
+									%td= stat.converted_url
+									%td= stat.created_at
+									%td= stat.same_url_converted
+									%td= stat.url_opened
+									%td= stat.last_opened_at
+									%td= stat.last_browser_opened_on
+%hr
