@@ -1,1 +1,6 @@
-%p= "#{@host}:#{@port}/#{@url.converted_url}"
+%h3 Your shortened URL is
+- debugger
+- if Rails.env.eql?("development")
+	%p= "#{@host}:#{@port}/#{@url.converted_url}"
+- else
+	%p= "#{@host}/#{@url.converted_url}"

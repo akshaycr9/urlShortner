@@ -5,6 +5,7 @@
 		%title URL Shortner
 		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= stylesheet_link_tag 'urls'
 		= csrf_meta_tags
 	%body
 		%nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
@@ -22,5 +23,3 @@
 					%h1.display-3 URL Shortner
 					%p Enter the URL you need to shorten and watch the magic happen!  
 			= yield
-		%footer.container
-			%p= "© Url Shortner #{Date.today.year}"
